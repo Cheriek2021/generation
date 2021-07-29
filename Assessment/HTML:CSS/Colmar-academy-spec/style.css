@@ -1,0 +1,276 @@
+.top-gray-container {
+    background-color: rgb(216, 216, 216);
+    height: 35rem;
+}
+
+.banner-img {
+    height: 60%;
+    position: relative;
+    left: 24px;
+    right: 24px;
+    top: 32px;
+    bottom: 32px;
+    justify-content: center;
+}
+
+.top-gray-content {
+    position: relative;
+    right: 24px;
+    top: 140px;
+    text-align: left;
+    justify-content: left;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(74, 74, 74);
+    color: rgb(250, 250, 250);
+    border: none;
+    padding: 8px 110px 8px 110px;
+}
+
+h2 {
+    font-weight: bold;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    color: rgb(74, 74, 74);
+}
+
+p {
+    color: rgb(125, 125, 125);
+}
+
+.source {
+    color: rgb(88, 88, 88);
+    font-size: 0.5rem;
+}
+
+.middle-white-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+    height: 40rem;
+    background-color: whitesmoke;
+}
+
+.info-img {
+    width: 75%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    line-height: 1;
+}
+
+.flex-item-1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-img {
+    width: 8rem;
+}
+
+.flex-item-2 {
+    position: relative;
+    top: 15px;
+    padding-left: 0.5rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#guest-box {
+    position: relative;
+    left: 19px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(216, 216, 216);
+}
+
+#ori-box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+#campus-box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.middle-gray-container {
+    background-color: rgb(216, 216, 216);
+    height: 60rem;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+#start-learning {
+    text-align: center;
+}
+
+.card-content {}
+
+#bottom-title {
+    text-align: center;
+}
+
+.flex-final-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-final-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox-1 {
+    padding-right: 20px;
+}
+
+.exhibits-item-1 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(216, 216, 216);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    width: 80%;
+    height: 80%;
+}
+
+.thesis-img {
+    width: 8rem;
+}
+
+.final-row-2 {
+    padding: 16px;
+}
+
+.exhibits-item-2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.now-image {
+    width: 8rem;
+}
+
+.bottom-container {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto;
+}
+
+#source-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright {
+    justify-content: flex-start;
+}
+
+.flexend {
+    justify-content: flex-end;
+}
+
+.navbar-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    justify-content: flex-start;
+}
+
+.nav-item {
+    justify-content: flex-end;
+}
+
+#nav-opt {
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.navbar-moblie {
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.top-gray-moblie {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#banner-moblie {
+    height: 40%;
+    display: none;
+}
+
+.card-moblie {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-moblie {
+        display: flex;
+    }
+    .top-gray-content {
+        display: none;
+    }
+    .banner-img {
+        display: flex;
+        height: 56%;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+    }
+    .top-gray-moblie {
+        display: none;
+    }
+    .top-gray-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .middle-gray-container {
+        display: none;
+    }
+    .card-moblie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
