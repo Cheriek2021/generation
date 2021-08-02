@@ -1,47 +1,45 @@
-//all events array
-const getAllEvents = () => {
-    return ['Marathon', 'Triathalon', 'Decathalon'];
-};
+// The scope of `random` is too loose 
+const random = Math.floor(Math.random() * 3);
 
-//selects EVENT at random from the array
-const getRandomEvent = () => {
-    const allEvents = getAllEvents();
-    const event = allEvents[Math.floor(Math.random() * allEvents.length)];
-    return event;
-};
-
-//returns a LIST of ACTIVITIES based on the event selected
-const getEventActivities = event => {
-    const allEvents = getAllEvents();
-    if (!allEvents.includes(event)) {
-        return null;
+const getRandEvent = () => {
+    if (random === 0) {
+        return 'Marathon';
+    } else if (random === 1) {
+        return 'Triathlon';
+    } else if (random === 2) {
+        return 'Pentathlon';
     }
+};
 
-    let activities;
+// The scope of `days` is too tight 
+const getTrainingDays = event => {
+
     if (event === 'Marathon') {
-        activities = ['Running'];
+        let days = 50;
     } else if (event === 'Triathlon') {
-        activities = ['Running', 'Cycling', 'Swimming'];
-    } else if (event === 'Decathlon') {
-        activities = ['Running', 'Hurdles', 'Javelin throw', 'Discus Throw', 'Shot put', 'High Jump'];
+        let days = 100;
+    } else if (event === 'Pentathlon') {
+        let days = 200;
     }
-    return activities.join(', ');
+
+    return days;
 };
 
-//returns the NUMBER OF DAYS to train based on the event selected
-const getDaysToTrain = event => {
-    const allEvents = getAllEvents();
-    allEvents['Marathon', 'Triathlon', 'Decathlon'];
-    if (!allEvents.includes(event)) {
-        return null;
-    }
-    const eventTrainingTimes = { 'Marathon': 50, 'Triathlon': 100, 'Decathlon': 200 };
-    return eventTrainingTimes[event];
+// The scope of `name` is too tight 
+const logEvent = event => {
+    const name = 'Nala';
+    console.log(`${name}'s event is: ${event}`);
 };
 
-const getEventMessage = () => {
-    const myEvent = getRandomEvent();
-    console.log('Your event is a ' + myEvent + '. Your event activities consist of ' + getEventActivities(myEvent) + '. You have ' + getDaysToTrain(myEvent) + ' days to train.');
-}
+const logTime = days => {
+    const name = 'Nala';
+    console.log(`${name}'s time to train is: ${days} days`);
+};
 
-getEventMessage();
+const event = getRandEvent();
+const days = getTrainingDays(event);
+// Define a `name` variable. Use it as an argument after updating logEvent and logTime 
+
+
+logEvent(event);
+logTime(days);
